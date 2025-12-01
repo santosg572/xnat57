@@ -1,0 +1,4 @@
+soporte@dharma:~/logs_dic0125$ ps -aux | grep tomcat
+xnat        2222  1.7  5.7 18711604 3769064 ?    Sl   may19 5016:17 /usr/local/jdk1.8.0_361/bin/java -Djava.util.logging.config.file=/opt/xnat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xms512M -Xmx4G -server -XX:+UseParallelGC -Dxnat.home=/data/XNAT-DB/home -Dignore.endorsed.dirs= -classpath /opt/xnat/bin/bootstrap.jar:/opt/xnat/bin/tomcat-juli.jar -Dcatalina.base=/opt/xnat -Dcatalina.home=/opt/xnat -Djava.io.tmpdir=/opt/xnat/temp org.apache.catalina.startup.Bootstrap start
+soporte  2227889  0.0  0.0  12100  2496 pts/0    S+   09:05   0:00 grep --color=auto tomcat
+soporte@dharma:~/logs_dic0125$ 
